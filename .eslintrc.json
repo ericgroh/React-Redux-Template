@@ -5,7 +5,7 @@
     "array-bracket-spacing": [ 2, "always" ],
     "no-const-assign": 2,
     "no-var": 2,
-    "indent": [ 2, 4 ],
+    "indent": [ 2, 2 ],
     "quotes": [ 2, "backtick" ],
     "no-plusplus": 2,
     "global-require": 2
