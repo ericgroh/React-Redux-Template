@@ -8,7 +8,8 @@ module.exports = (app, passport) => {
     });
 
     app.get(`/login`, async (req, res) => {
-        res.render(`login.ejs`, {message: req.flash(`loginMessage`)});
+        // res.render(`login.ejs`, {message: req.flash(`loginMessage`)});
+        res.render(`login.ejs`, { message: "fuck this"});
     });
 
     app.post(`/login`, passport.authenticate(`local`, {

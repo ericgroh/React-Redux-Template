@@ -10,7 +10,7 @@ import passport from 'passport';
 import flash from 'connect-flash';
 import {ENV, PORT, MONGO_URL} from './config.js';
 
-mongoose.connect(MONGO_URL, {useNewUrlParser: true});
+// mongoose.connect(MONGO_URL, {useNewUrlParser: true});
 require(`./utils/passport`)(passport);
 
 let app = express();
@@ -23,21 +23,21 @@ app.set(`view engine`, `ejs`);
 app.use(express.static(`${__dirname}/../public/`));
 
 
-app.use(session({
-    secret: `sometextstring`,
-    saveUninitialized: true,
-    resave: true,
-    store: new MongoStore({mongooseConnection: mongoose.connection})
-}));
+// app.use(session({
+//     secret: `sometextstring`,
+//     saveUninitialized: true,
+//     resave: true,
+//     store: new MongoStore({mongooseConnection: mongoose.connection})
+// }));
 
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
-app.use(flash()); // use connect-flash for flash messages stored in session
+// app.use(flash()); // use connect-flash for flash messages stored in session
 
 app.use(function(req, res, next) {
-    console.log(req.session); // eslint-disable-line
+    // console.log(req.session); // eslint-disable-line
     console.log(`===================`); // eslint-disable-line
-    console.log(req.user); // eslint-disable-line
+    // console.log(req.user); // eslint-disable-line
     next();
 });
 
