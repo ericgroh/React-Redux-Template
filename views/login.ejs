@@ -11,27 +11,21 @@
     <% include ./partials/header %>
 </header>
 
-<main>
-    <div class="jumbotron">
-        <h1>Login</h1>
-        <p>Welcome to the template</p>
-    </div>
-</main>
-    <form class="" action="/login" method="post">
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" name="email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password">
-        </div>
-        <button type="submit" name="button">Submit</button>
-    </form>
-    <p><%= message %></p>
-<footer>
-    <% include ./partials/footer %>
-</footer>
+<h3> Welcome </h3>
 
-</body>
+<div class = "Form">
+<form action="home">
+  <input type="text" name="email" placeholder="email"><br><br>
+  <input type="password" name="password" placeholder="password"><br><br>
+  <input type="submit" value="Login">
+</form>
+</div>
+<br>
+<div>
+<p> New User? </p>
+<a href="signup">Create Account</a>
+</div>
+
+
+
 </html>

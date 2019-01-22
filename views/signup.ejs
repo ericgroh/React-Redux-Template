@@ -11,28 +11,18 @@
     <% include ./partials/header %>
 </header>
 
-<main>
-    <div class="jumbotron">
-        <h1>Sign up</h1>
-        <p>Welcome to the template</p>
-    </div>
-    <form class="" action="/signup" method="post">
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" name="email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password">
-        </div>
-        <button type="submit" name="button">Submit</button>
-    </form>
-    <p><%= message %></p>
-</main>
+<h3> New User </h3>
 
-<footer>
-    <% include ./partials/footer %>
-</footer>
+<div class = "Form">
+<form action="/action_page.js">
+  <input type="text" name="fname" placeholder="first name"><br><br>
+  <input type="text" name="lname" placeholder="last name"><br><br>
+  <input type="text" name="email" placeholder="email"><br><br>
+  <input type="password" name="password" placeholder="password"><br><br>
+  <input type="submit" value="Create Account">
+</form>
+</div>
 
-</body>
+
+
 </html>
