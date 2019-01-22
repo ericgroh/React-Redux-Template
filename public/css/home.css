@@ -1,0 +1,26 @@
+.button {
+    width: 300px;
+    height: 150px;
+    color: black;
+    background-color: #D6D5D5;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .button:hover {
+    background-color:  #F3F3F3;
+  }
+}
+
+div {
+  text-align: center;
+}
+
+h4 {
+  font-size: 15px;
+  text-align: center;
+}
