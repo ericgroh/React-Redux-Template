@@ -20,7 +20,7 @@ $ touch .env
 ###### Add the following to the `.env` file
 ```
 PORT=4000
-SECRET_KEY=dontfeedthegoalie
+SECRET_KEY=secret
 ADMIN_FIRST_NAME=first
 ADMIN_LAST_NAME=last
 ADMIN_EMAIL=email@email.com
