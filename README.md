@@ -13,13 +13,11 @@ Template Application for React with Redux and an Express.js API connected to a P
 	cd React-Redux-Template && yarn && yarn run client-install
 ```
 #### 3. Create Backend `.env` file
-	
-		Create .env with the following command:
+###### Create .env with the following command:
 ```console
 	touch .env
 ```
-
-		Add the following to the `.env` file
+###### Add the following to the `.env` file
 ```
 PORT=4000
 SECRET_KEY=dontfeedthegoalie
@@ -32,22 +30,13 @@ DATABASE_NAME=database_name
 DATABASE_USERNAME=username
 DATABASE_PASSWORD=password
 ```
-### 4. Create Client `.env` file
-    Create `.env` with the following command:
+#### 4. Create Client `.env` file
+###### Create `.env` with the following command:
     ```console
         touch client/.env
     ```
     	
-    Add the following to the `.env` file
+###### Add the following to the `.env` file
 ```
-PORT=4000
-SECRET_KEY=dontfeedthegoalie
-ADMIN_FIRST_NAME=first
-ADMIN_LAST_NAME=last
-ADMIN_EMAIL=email@email.com
-ADMIN_PASSWORD=password
-DATABASE_HOST=localhost
-DATABASE_NAME=database_name
-DATABASE_USERNAME=username
-DATABASE_PASSWORD=password
+REACT_APP_API_URL=http://localhost:4000
 ```
